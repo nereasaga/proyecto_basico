@@ -66,10 +66,18 @@
                         color: rgb(72, 107, 63);
                         transition: 500ms;}
         
-        header {display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;}
+        header {display: flex;}
+
+        header.div {border: 0.2rem solid red;}
+
+
+        header>div.logo {width: 25%;}
+
+        header>div.titulo { width: 75%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: flex-start;}
 
         h1, h2, p {width: 50%;
                     background-color: cadetblue;
