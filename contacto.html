@@ -6,6 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .form span {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 200;
+                    font-style: italic;}
+
+        input[type="text"] {width: 4rem;
+                }
 
     </style>
 </head>
@@ -42,14 +49,63 @@
             </article>
             <article class="form"> 
                 <form action="recogida.php" method="get"> 
-                    <label for="primero"> Nombre
-                    <input type="text" id="primero" name="Nombre" placeholder="tu nombre" />
+                    <label for="primero"> * Nombre
+                    <input type="text" id="primero" value="Angel" name="Nombree" placeholder="tu nombre" required />
                     </label>
 
                     <label for=""> Apellido
-                    <input type="text" id="segundo" name="apellido" placeholder="tu apellido" />
+                    <input type="text" id="segundo" value="Perez" name="apellidoo" placeholder="tu apellido" />
                     </label>
-                    <input type="submit" value="ENVIAR">
+
+
+                    <p>Deporte que practicas</p>
+                    <label for="deporte1"> Atletismo
+                    <input id="deporte1" type="checkbox" value="1" name="deporte1" >
+                    </label>
+
+                    <label for="deporte2"> Natacion
+                        <input id="deporte2" type="checkbox" value="2" name="deporte2" checked>
+                        </label>
+
+                    <label for="deporte3"> Gimnasia
+                    <input id="deporte3" type="checkbox" value="3" name="deporte3" >
+                    </label>
+
+
+                    <p>¿Donde vives?</p>
+                    <label for="procedencia1"> Bizkaia
+                    <input id="procedencia1" type="radio" value="bizkaia" name="procedencia" checked>
+                    </label>
+
+                    <label for="procedencia2"> Araba
+                        <input id="procedencia2" type="radio" value="araba" name="procedencia" >
+                        </label>
+
+                    <label for="procedencia3"> Gipuzkoa
+                    <input id="procedencia3" type="radio" value="gipuzkoa" name="procedencia" >
+                    </label>
+
+                    <label for="procedencia4"> Otro lugar
+                        <input id="procedencia4" type="radio" value="otro" name="procedencia" >
+                        </label>
+
+                    <p>¿Como te desplazas a centro?</p>
+                    <select name="transporte" id="desplazamiento" >
+                        <option value="">____</option>
+                        <option value="1">Autobus</option>
+                        <option value="2" selected>Metro</option>
+                        <option value="3">Coche propio</option>
+                        <option value="4">Tren</option>
+                        <option value="5">Otro</option>
+                    </select>
+
+                    <p></p>
+                    
+
+                    <!-- <input type="submit" value="ENVIAR"> -->
+                    <button type="reset">Resetear</button>
+                    <button type="submit"><span>Enviar</span></button>
+
                 </form>
 
             </article>
